@@ -6,37 +6,49 @@
 \usepackage[backend=bibtex]{biblatex}
 \usepackage{multicol}
 
+% Remove the ridiculously huge interline spacing.
+\newenvironment{mylist}
+{
+  \begin{itemize}
+  \setlength{\itemsep}{1pt}
+  \setlength{\parskip}{0pt}
+  \setlength{\parsep}{0pt}
+}
+{
+\end{itemize}
+}
+
 \title{РМеню\footnote{Ружка и Миро меню. Неща които бихме ви сготвили ако има 2 часа излишни и много бира.}}
 \begin{document}
 \maketitle
 \begin{multicols}{2}
 \section{Закуски}
-\begin{itemize}
+\begin{mylist}
     \item{Пържени филийки}
     \item{Печени с масло}
     \item{Принцеси}
     \item{Меки цици}
     \item{Палачинки}
-\end{itemize}
+\end{mylist}
 
 \section{Салати}
-\begin{itemize}
+\begin{mylist}
     \item{Зелена}
     \item{Картофена}
     \item{Шопска}
     \item{Доматена}
-\end{itemize}
+\end{mylist}
 
 \section{Супи}
-\begin{itemize}
+\begin{mylist}
     \item{Топчета}
     \item{Картофена}
     \item{Пилешка}
     \item{Леща}
-\end{itemize}
+\end{mylist}
 
 \section{Предястия}
-\begin{itemize}
+\begin{mylist}
     \item{ПКС}
     \item{Тиквички на тиган}
     \item{Сирене}
@@ -44,30 +56,30 @@
     \item{Варени яйца/картофи}
     \item{Кисели краставички}
     \item{Панирано сирене/кашкавал}
-\end{itemize}
+\end{mylist}
 
 \section{Скара}
-\begin{itemize}
+\begin{mylist}
     \item{Кюфтета}
     \item{Пържоли}
     \item{Карначета}
-\end{itemize}
+\end{mylist}
 
 \section{Цици}
-\begin{itemize}
+\begin{mylist}
     \item{Шунка}
     \item{Пилешко/Пуешко филе}
-\end{itemize}
+\end{mylist}
 
 \section{Сосове}
-\begin{itemize}
+\begin{mylist}
     \item{Чеснов}
     \item{Лютеница с лук}
     \item{Люти чушки}
-\end{itemize}
+\end{mylist}
 
 \section{Основни ястия}
-\begin{itemize}
+\begin{mylist}
     \item{Картофена яхния}
     \item{Бобена яхния с гъби}
     \item{Мусака}
@@ -86,15 +98,15 @@
     \item{Сарми}
     \item{Картофени кюфтета}
     \item{Баница - със сирене, тиква, спанак, коприва, гъби, шунка}
-\end{itemize}
+\end{mylist}
 
 \section{Десерти}
-\begin{itemize}
+\begin{mylist}
     \item{Бисквитена торта}
     \item{Мляко с ориз}
     \item{Сладък салам}
     \item{Крем карамел}
-\end{itemize}
+\end{mylist}
 \end{multicols}
 
 \end{document}
